@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const std_arr=[
+            "Aye",
+            "Mg Mg",
+            "Ko ko"
+        ]
+        const add_std=(list,name)=>
+            //   list.push(name);
+            //   return list;
+            [...list,name];
+        console.log("New Arr",add_std(std_arr,"Ko"));
+        console.log("Old Arr",std_arr)
+        //console.log(...std_arr)
+    </script>
+</body>
+</html>

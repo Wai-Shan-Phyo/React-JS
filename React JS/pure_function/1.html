@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+    //    function card(title){
+    //     let h1=document.createElement("h1");
+    //     $(h1).text(title);
+    //     $("body").append(h1);
+    //    }
+    //    card("Hellow");
+    
+    //pure Function
+    const car={
+        brand:"BMW",
+        model:2020
+    }
+    const change=(obj,res)=> {
+    res(obj)
+     return {...obj,model:2022}
+    }
+    console.log("new obj",change(car,(val)=>console.log("Before Changing",val)));
+    console.log(car)
+
+    </script>
+</body>
+</html>
